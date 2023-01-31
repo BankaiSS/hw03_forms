@@ -11,8 +11,7 @@ class Group(models.Model):
 
     class Meta:
         verbose_name_plural = 'Группы'
-    
-    
+
     def __str__(self):
         return self.title
 
@@ -37,7 +36,6 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['-pub_date']
-
 
     def __str__(self):
         return self.text
